@@ -1,11 +1,6 @@
 class Solution {
     public:
     void bt(int ind,vector<int>& nums,vector<vector<int>> &ans, vector<int>& li ) {
-    if(li.size()==nums.size())
-    {
-       ans.push_back(li);
-        return;
-    }
     ans.push_back(li);
     for(int i=ind;i<nums.size();i++)
     {
