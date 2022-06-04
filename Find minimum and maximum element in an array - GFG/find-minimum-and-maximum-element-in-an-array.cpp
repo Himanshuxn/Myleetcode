@@ -23,14 +23,15 @@ int main() {
 
 
 pair<long long, long long> getMinMax(long long a[], int n) {
- long long minm = INT_MAX;
- long long maxm = INT_MIN;
- for(int i=0;i<n;i++)
- {
-     minm=min(minm,a[i]);
-     maxm=max(maxm,a[i]);
- }
- pair<long long,long long> pp;
- pp=make_pair(minm,maxm);
- return pp;
+long long mn=INT_MAX;
+long long mx = INT_MIN;
+for(int i = 0;i<n;i++)
+{
+    mn = min(mn,a[i]);
+    mx = max(mx,a[i]);
+}
+pair<long long,long long> pp;
+pp.first =mn;
+pp.second = mx;
+return pp;
 }
