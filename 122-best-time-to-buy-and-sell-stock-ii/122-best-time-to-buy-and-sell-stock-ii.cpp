@@ -5,7 +5,7 @@ public:
       int n = prices.size();
       for(int i= 1;i<n;i++)
       {
-        maxcurr = max(0,maxcurr+=prices[i]-prices[i-1]);
+        maxcurr = max(0,prices[i]-prices[i-1]);
         if(maxcurr>0)
         {
          maxsofar+=maxcurr;
