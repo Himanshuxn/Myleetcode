@@ -6,12 +6,9 @@ public:
       for(int i= 1;i<n;i++)
       {
         maxcurr = max(0,prices[i]-prices[i-1]);
-        if(maxcurr>0)
-        {
          maxsofar+=maxcurr;
-         maxcurr = 0;
+        maxcurr = 0;
         }
-      }
       return maxsofar;
     }
 };
